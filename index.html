@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter</title>
+    <link rel="stylesheet" href="src/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge, and Firefox */
+        .hide-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+    </style>
+
+</head>
+<body>
+    <div class="flex bg-black w-screen h-screen">
+        <div id="sidebar" class="flex flex-col gap-5 items-center sidebar w-20 sm:w-1/4 h-full border border-gray-700 p-2">
+            <div class="twitter  w-1/2 flex justify-start">
+                <img src="svg/twitter.svg" class=" w-6 md:w-7 lg:w-8 " alt="">
+            </div>
+            <div class="twitter w-1/2 flex gap-4 justify-start">
+                <img src="svg/home.svg" class="w-5 md:w-6 lg:w-7" alt="">
+                <span class="text-white  font-bold hidden lg:inline  md:text-xl">Home</span>
+            </div>
+            <div class="twitter w-1/2 gap-4 flex justify-start">
+                <img src="svg/search.svg" class="invert w-5 md:w-6 lg:w-7" alt="">
+                <span class="text-white hidden lg:inline font-bold  text-xl">Explore</span>
+            </div>
+            <div class="twitter w-1/2 gap-4 flex justify-start">
+                <img src="svg/noti.svg" class="invert w-5 md:w-6 lg:w-7" alt="">
+                <span class="text-white hidden lg:inline font-bold  text-xl">Notificaions</span>
+            </div>
+            <div class="twitter w-1/2 gap-4 flex justify-start">
+                <img src="svg/msg.svg" class="invert w-5 md:w-6 lg:w-7" alt="">
+                <span class="text-white hidden lg:inline font-bold  text-xl">Messages</span>
+            </div>
+            <div class="twitter w-1/2 gap-4 flex justify-start">
+                <img src="svg/grok.svg" class="invert w-5 md:w-6 lg:w-7" alt="">
+                <span class="text-white hidden lg:inline font-bold  text-xl">Grok</span>
+            </div>
+            <div class="twitter w-1/2 gap-4 flex justify-start">
+                <img src="svg/bookmark.svg" class="invert w-5 md:w-6 lg:w-7" alt="">
+                <span class="text-white hidden lg:inline font-bold  text-xl">Bookmarks</span>
+            </div>
+            <div class="twitter w-1/2 flex gap-4 justify-start">
+                <img src="svg/profile.svg" class="invert w-5 md:w-6 lg:w-7" alt="">
+                <span class="text-white hidden lg:inline font-bold  text-xl">Communities</span>
+            </div>
+            <div class="twitter w-1/2 flex gap-4 justify-start">
+                <img src="svg/twitter.svg" class="w-5 md:w-6 lg:w-7" alt="">
+                <span class="text-white hidden lg:inline font-bold  text-xl">Premium</span>
+            </div>
+            <div class="twitter w-1/2 flex gap-4 justify-start">
+                <img src="svg/man.svg" class="invert w-5 md:w-6 lg:w-7" alt="">
+                <span class="text-white hidden lg:inline font-bold  text-xl">Profile</span>
+            </div>
+            <div class="twitter w-1/2 gap-4 flex justify-start">
+                <img src="svg/more.svg" class="invert w-5 md:w-6 lg:w-7" alt="">
+                <span class="text-white hidden lg:inline font-bold  text-xl">More</span>
+            </div>
+
+            <button id="button" class="text-white w-16 lg:w-56  md:w-40  h-10 md:h-12 lg:h-14 rounded-full text-sm md:text-lg lg:text-xl font-bold">Post</button>
+            <span class="mt-5 w-12 p-3 inline text-white md:hidden bg-green-900 text-center rounded-full">A</span>
+            <div class="text-white hidden mt-5 md:flex w-full justify-center gap-5 items-center">
+                <span class=" w-12 p-3 bg-green-900 text-center rounded-full">A</span>
+                <div class="flex flex-col">
+                    <span>Abhishek Shelar</span>
+                    <span class="text-gray-500">@shelrabhi</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="main overflow-scroll hide-scrollbar  text-white flex flex-1 sm:w-3/4" id="main">
+            <div class="border  left w-full lg:w-1/2 overflow-scroll hide-scrollbar" id="left">
+                <div class="border border-gray-700 flex justify-around sticky top-0  bg-black bg-opacity-85">
+                    <span class="border-b-4 rounded-sm border-blue-500 py-3">For you</span>
+                    <span class="text-gray-500 py-3">Following</span>
+                </div>
+
+                <div class="border-b border-b-gray-700   w-full min-h-2/5">
+                    <div class="px-3 flex py-5">
+                        <span class="px-4 py-2 h-10   bg-green-900 text-center rounded-full">A</span> 
+                        <p  class="px-2 text-white text-sm md:text-xl">What is happening?! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita commodi corrupti optio ea accusantium nobis molestias voluptatem velit debitis sed. Explicabo, omnis? Facere, aut est.</span>
+                    </div>
+
+                    <div class="h-1/3 pr-3 gap-1 hidden xl:flex justify-end items-center">
+                        <img src="svg/arrow.svg" class="" alt="">
+                        <div class="border border-blue-600 flex gap-1 rounded-full">
+                            <span class="border-r-blue-600 border-r p-1 text-blue-600">Funny tone</span>
+                            <img src="svg/funny.svg" class="p-1" alt="">
+                        </div>
+                        <div class="border border-blue-600 flex gap-1 rounded-full">
+                            <span class="border-r-blue-600 border-r p-1 text-blue-600">Dad joke</span>
+                            <img src="svg/funny.svg" class="p-1" alt="">
+                        </div>
+
+                        <img src="svg/r_arrow.svg" class="" alt="">
+
+                        <div class="border-blue-600 border rounded-full p-1 text-blue-600">Create</div>
+                        <img src="svg/thor.svg" class="w-8 border rounded-full p-1" alt="">
+                        <img src="svg/dot.svg" class="" alt="">
+                    </div>
+
+                    <div id="everyone" class="items-end flex flex-col">
+                        <div class="flex w-5/6 gap-1 mx-5 py-3 border-b border-b-gray-700">
+                            <img src="svg/earth.svg" alt="abcd" class="w-5">
+                            <span>Everyone can reply</span>
+                        </div>
+
+                        <div class="flex w-5/6 gap-3 mx-5 py-3">
+                            <img src="svg/img.svg" id="img" class="w-5" alt="">
+                            <img src="svg/gif.svg" id="img" class="w-5" alt="">
+                            <img src="svg/menu.svg" id="img" class="w-5" alt="">
+                            <img src="svg/smile.svg" id="img" class="w-5" alt="">
+                            <img src="svg/timeTable.svg" id="img" class="w-5" alt="">
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-700 p-3 text-center" style="color:rgb(29, 155, 240)">
+                        Show 840 Post
+                    </div>
+                </div>
+
+
+
+                <div class="profiles h-full">
+                    <div class=" border border-gray-600 flex p-3">
+                        <img src="images/mi.jpg" class="w-10 h-10 rounded-sm" alt="">
+                        <div class=" px-2  h-full flex-col flex-1 space-y-3">
+                            <div class="flex flex-col"><p class="flex gap-1 ">Mumbai Indians <img src="svg/tick.svg" class="w-5" alt="abcd"><span class="text-gray-500">@mipaltan · 7h</span></p>
+                                
+                                <div class="flex gap-1 font-extrabold"><span>4K 𝕢𝕦𝕒𝕝𝕚𝕥𝕪 </span><img src="svg/star.svg" class="w-5" alt=""></div>
+                            </div>
+
+                            <div style="color:rgb(29, 155, 240)">
+                                <a href="/">#MumbaiMeriJaan</a>
+                                <a href="/">#MumbaiIndians</a>
+                                <a href="/">#T20WorldCup</a>
+                                <a href="/">#INDvIRE</a>
+                                <a href="/">#ImRo45</a>
+                                <a href="/">#iamVKohli</a>
+                            </div>
+
+                            <div>
+                                <img src="images/rohitSharma.jpeg" class="w-5/6 rounded-xl" alt="">
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="border border-gray-600 flex p-3">
+                        <img src="images/sachinTendulkar.jpg" class="w-10 h-10 rounded-sm" alt="">
+                        <div class=" px-2  h-full flex-col flex-1 space-y-3">
+                            <div class="flex flex-col"><p class="flex gap-1 ">Sachin Tendulkar <img src="svg/tick.svg" class="w-5" alt="abcd"><span class="text-gray-500">@sachin_rt · 1h</span></p>
+                            </div>
+
+                            <div class="flex flex-col gap-5">
+                                <div>
+                                    <p>No goal is easy to achive.</p>
+                                    <p>Let alone 94 international ones.</p>
+                                </div>
+                                
+                                <div>
+                                    <p>You've held the flag high, Sunil Chhetri.🇮🇳⚽</p>
+                                    <p>Congratulations on a remarkable career!</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <img src="images/sunil_chetri.jpeg" class="w-5/6 rounded-xl" alt="">
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+            <div class="right border border-gray-700 hidden lg:flex lg:flex-col md:w-1/2 px-8 py-2 gap-4 h-full overflow-scroll hide-scrollbar">
+
+                <div class="search w-3/4 flex rounded-full p-1 gap-3 bg-gray-800 sticky top-0"><div class="p-2"><img src="svg/search1.svg" class="w-5 invert" alt=""></div><input type="search" class="bg-transparent w-5/6 outline-none text-white" placeholder="Search"></div>
+                <div class="border border-gray-700 w-3/4 rounded-2xl px-4 py-3 flex flex-col gap-2.5">
+                    <div class="text-xl font-bold">Subscibe to Premium</div>
+                    <div class="leading-tight">Subscribe to unlock new features and if eligible, receive a share of ads revenue.</div>
+                    <button class=" w-32 p-1.5 rounded-full font-bold" style="background-color: rgb(29, 155, 240);">Subscribe</button>
+                </div>
+
+                <div class="border border-gray-700 w-3/4 rounded-2xl p-3 flex flex-col gap-5">
+                    <p class="font-bold text-xl">What's happening</p>
+                    <div class=" flex">
+                        <img src="images/wspeed.jpeg" class="w-20 rounded-xl object-cover h-20" alt="">
+                        <div class="py-1 px-2">
+                            <span class="font-bold">WWE Speed</span>
+                            <p class="text-xs text-gray-400">Wrestling | Every Wednesday·June 6, 2024</p>
+                        </div>
+                    </div>
+                    <div class=" flex justify-between">
+                        <div class=" flex flex-col">
+                            <span class="text-gray-400 text-xs">Trending in India</span>
+                            <span>#NEETResult</span>
+                            <span class="text-gray-400 text-xs">8,880 posts</span>
+                        </div>
+                        <img src="svg/h_dot.svg" class="w-5 object-cover invert border h-4 " alt="">
+                    </div>
+                    <div class=" flex justify-between">
+                        <div class="flex flex-col">
+                            <span class="text-gray-400 text-xs">Politics · Trending</span>
+                            <span>#Narendra Modi</span>
+                            <span class="text-gray-400 text-xs">8,880 posts</span>
+                        </div>
+                        <img src="svg/h_dot.svg" class="w-5 object-cover invert border h-4 " alt="">
+                    </div>
+                    <div class=" flex justify-between">
+                        <div class=" flex flex-col">
+                            <span class="text-gray-400 text-xs">Trending in India</span>
+                            <span>NDA Meeting</span>
+                            <span class="text-gray-400 text-xs">8,880 posts</span>
+                        </div>
+                        <img src="svg/h_dot.svg" class="w-5 object-cover invert border h-4 " alt="">
+                    </div>
+                    <div class=" flex justify-between">
+                        <div class=" flex flex-col">
+                            <span class="text-gray-400 text-xs">Cricket · Trending</span>
+                            <span>#RohitSharma</span>
+                            <span class="text-gray-400 text-xs">8,880 posts</span>
+                        </div>
+                        <img src="svg/h_dot.svg" class="w-5 object-cover invert border h-4 " alt="">
+                    </div>
+
+                    <div class=" flex justify-between">
+                        <div class=" flex flex-col">
+                            <span class="text-gray-400 text-xs">Cricket · Trending</span>
+                            <span>#RohitSharma</span>
+                            <span class="text-gray-400 text-xs">8,880 posts</span>
+                        </div>
+                        <img src="svg/h_dot.svg" class="w-5 object-cover invert border h-4 " alt="">
+                    </div>
+
+                    <div class=" flex justify-between">
+                        <div class=" flex flex-col">
+                            <span class="text-gray-400 text-xs">Cricket · Trending</span>
+                            <span>#RohitSharma</span>
+                            <span class="text-gray-400 text-xs">8,880 posts</span>
+                        </div>
+                        <img src="svg/h_dot.svg" class="w-5 object-cover invert border h-4 " alt="">
+                    </div>
+                    
+                    <a href=""></a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
